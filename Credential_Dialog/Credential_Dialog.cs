@@ -37,11 +37,11 @@ namespace WinCred
                                                            ref int pcchMaxDomainame,
                                                            StringBuilder pszPassword,
                                                            ref int pcchMaxPassword);
-        public static List<string> AuthEasy()
+        public static List<string> AuthEasy(string domain)
         {
             CREDUI_INFO credui = new CREDUI_INFO();
             credui.pszCaptionText = "Enter your network credentials";
-            credui.pszMessageText = "Enter your credentials to connect to: Twitter.com";
+            credui.pszMessageText = "Enter your credentials to connect to: " + domain;
             credui.cbSize = Marshal.SizeOf(credui);
             uint authPackage = 0;
             IntPtr outCredBuffer = new IntPtr();
