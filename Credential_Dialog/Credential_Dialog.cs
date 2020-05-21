@@ -37,7 +37,7 @@ namespace WinCred
                                                            ref int pcchMaxDomainame,
                                                            StringBuilder pszPassword,
                                                            ref int pcchMaxPassword);
-        public static List<string> AuthEasy(string domain)
+        public static List<string> AuthEasy(string domain=String.Empty)
         {
             CREDUI_INFO credui = new CREDUI_INFO();
             credui.pszCaptionText = "Enter your network credentials";
