@@ -16,7 +16,7 @@
 
 Open the SLN file in Visual Studio and build the library.  
 Once you've done that, then you can:  
-*   *Add a reference to the DLL file and use in another solution. For example:  
+*   Add a reference to the DLL file and use in another solution. For example:  
 ```cs
 using System;
 using System.Collections.Generic;
@@ -36,12 +36,12 @@ namespace CredUIPrompt
     }
 }
 ```  
-*   *You can also use it in PowerShell like this:  
+*   You can also use it in PowerShell like this:  
 ```ps1
 Add-Type -Path "C:\path\to\source\repos\Credential_Dialog\Credential_Dialog\bin\debug\Credential_Dialog.dll"
 [WinCred.CredentialDialog]::AuthEasy();
 ```
-*   *You can also pass a string argument so that the prompt will read: **Enter your credentials to log onto: string args[0]**  
+*   You can also pass a string argument so that the prompt will read: **"Enter your credentials to log onto: " + args[0]; **  
 ```ps1
 Add-Type -Path "C:\path\to\source\repos\Credential_Dialog\Credential_Dialog\bin\debug\Credential_Dialog.dll"
 [WinCred.CredentialDialog]::AuthEasy("Twitter.com");
