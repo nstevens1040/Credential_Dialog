@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/github/nstevens1040/Credential_Dialog?svg=tru)](https://ci.appveyor.com/project/nstevens1040/Credential_Dialog)
 # Credential_Dialog
 
 .NET Framework library that invokes a standard Windows credential prompt
